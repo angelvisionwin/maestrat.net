@@ -139,7 +139,7 @@
 
     <!-- Menú  ======================================================================== -->
     <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top" style="padding-left: 50px; padding-top:5px;">
-        <a class="navbar-brand" href="/"><img src="img/logo_svg.svg"
+        <a class="navbar-brand" href="/"><img src="/img/logo_svg.svg"
                 alt="Visionwin programas de facturación y contabilidad"></a>
         <!-- Botón para resoluciones pequeñas -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

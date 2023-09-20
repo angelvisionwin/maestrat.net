@@ -5,7 +5,7 @@
     $pagekeywords = "software facturacion y contabilidad, programas de facturacion y contabilidad, programas de contabilidad y facturacion";
     $extracss = "banners";
 
-    require_once( 'php/cabecera.php' );
+    require_once( 'cabecera.php' );
 
 ?>    
 
@@ -20,7 +20,7 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-                <img class="d-block w-100" src="img/b1_2023.webp" loading="lazy" alt="Programas de facturación y contabilidad">
+                <img class="d-block w-100" src="/img/b1_2023.webp" loading="lazy" alt="Programas de facturación y contabilidad">
                 <div class="carousel-caption-top">
                     Programas <span class="negrita">de</span><br />
                     <span class="negrita">Contabilidad,<br />
@@ -40,7 +40,7 @@
             </div>
 
             <div class="carousel-item">
-                <img class="d-block w-100" src="img/b2_2023.webp" loading="lazy" alt="Programas de facturación y contabilidad">
+                <img class="d-block w-100" src="/img/b2_2023.webp" loading="lazy" alt="Programas de facturación y contabilidad">
                 <div class="carousel-caption-top">
                     <span class="negrita subrayado">NUEVA VERSIÓN 2023 rev. 5.0</span><br />
                     <span class="texto-subtitulo">
@@ -57,7 +57,7 @@
             </div>
 
             <div class="carousel-item">
-                <img class="d-block w-100" src="img/b3_2023.webp" loading="lazy" alt="Programas de facturación y contabilidad">
+                <img class="d-block w-100" src="/img/b3_2023.webp" loading="lazy" alt="Programas de facturación y contabilidad">
             </div>
 
 
@@ -125,7 +125,7 @@
 
 <?php
 
-    require_once( 'php/pie.php' );
+    require_once( 'pie.php' );
 
 ?> 
 
