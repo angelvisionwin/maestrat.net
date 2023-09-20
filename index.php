@@ -20,7 +20,7 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-                <img class="d-block w-100" src="img/b1_2023.webp" alt="Programas de facturación y contabilidad">
+                <img class="d-block w-100" src="img/b1_2023.webp" loading="lazy" alt="Programas de facturación y contabilidad">
                 <div class="carousel-caption-top">
                     Programas <span class="negrita">de</span><br />
                     <span class="negrita">Contabilidad,<br />
@@ -40,7 +40,7 @@
             </div>
 
             <div class="carousel-item">
-                <img class="d-block w-100" src="img/b2_2023.webp" alt="Programas de facturación y contabilidad">
+                <img class="d-block w-100" src="img/b2_2023.webp" loading="lazy" alt="Programas de facturación y contabilidad">
                 <div class="carousel-caption-top">
                     <span class="negrita subrayado">NUEVA VERSIÓN 2023 rev. 5.0</span><br />
                     <span class="texto-subtitulo">
@@ -57,7 +57,7 @@
             </div>
 
             <div class="carousel-item">
-                <img class="d-block w-100" src="img/b3_2023.webp" alt="Programas de facturación y contabilidad">
+                <img class="d-block w-100" src="img/b3_2023.webp" loading="lazy" alt="Programas de facturación y contabilidad">
             </div>
 
 
@@ -81,7 +81,7 @@
         <div class="container">
             <div class="card-deck mb-4 mt-4">
                 <div class="card panel">
-                    <img class="card-img-top" src="/img/visionwin-contabilidad.webp"
+                    <img class="card-img-top" src="/img/visionwin-contabilidad.webp" loading="lazy"
                         alt="Programas de facturación y contabilidad">
                     <div class="card-body">
                         <h2 class="card-title">Visionwin Contabilidad</h2>
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="card panel">
-                    <img class="card-img-top" src="/img/visionwin-gestion.webp"
+                    <img class="card-img-top" src="/img/visionwin-gestion.webp" loading="lazy"
                         alt="Programas de facturación y contabilidad">
                     <div class="card-body">
                         <h2 class="card-title">Visionwin Gestión</h2>
@@ -107,7 +107,7 @@
                     </div>
                 </div>
                 <div class="card panel">
-                    <img class="card-img-top" src="/img/visionwin-tpv.webp"
+                    <img class="card-img-top" src="/img/visionwin-tpv.webp" loading="lazy"
                         alt="Programas de facturación y contabilidad">
                     <div class="card-body">
                         <h2 class="card-title">Visionwin TPV</h2>
