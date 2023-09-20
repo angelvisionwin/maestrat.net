@@ -1,0 +1,98 @@
+.barragestion {
+    padding-left: 10px;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.titulogestion {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #1a9fda;
+}
+
+.opciongestion {
+    font-size: 16px;
+    color: #0082ca;
+    text-align: right;
+}
+
+.barracontabilidad {
+    padding-left: 10px;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.titulocontabilidad {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #009846;
+}
+
+.opcioncontabilidad {
+    font-size: 16px;
+    color: #009846;
+    text-align: right;
+}
+
+
+.barracopias {
+    padding-left: 10px;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.titulocopias {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #fa5818;
+}
+
+.opcioncopias {
+    font-size: 16px;
+    color: #fa5818;
+    text-align: right;
+}
+
+.sino {
+    align-items: center;
+    text-align: left;
+}
+
+.usuarios {
+    align-items: center;
+}
+
+.numero-usuarios {
+    color: #1a9fda;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.precios {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.precios-ahorra {
+    position: relative;
+    top: -15px;
+}
+
+.texto-totales {
+    color: #000;
+}
+
+.importe-totales {
+    color: #1a9fda;
+    width: 25%;
+}

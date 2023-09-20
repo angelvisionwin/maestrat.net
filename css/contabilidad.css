@@ -1,0 +1,11 @@
+/* Visionwin Contabilidad */ 
+
+
+.contabilidad-banner {
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 0;
+    background-image: url('../img/software-contabilidad.webp');
+    height: auto;
+}
+

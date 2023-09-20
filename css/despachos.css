@@ -1,0 +1,11 @@
+/* Visionwin Despachos */
+
+
+.despachos-banner {
+    background-size: cover;
+    background-position: bottom bottom ;
+    margin-bottom: 0;
+    background-image: url('../img/despachos.webp');
+    height: auto;
+}
+

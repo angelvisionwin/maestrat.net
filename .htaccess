@@ -1,0 +1,168 @@
+# Redirección www 
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# URLS Amigables para el blog
+#   Entrada:  ID-nombre (ejempo 34-registro-horario)
+#   Salida: blog.php?id=ID
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^([0-9]+)\-([a-zA-Z0-9-]*)$ /blog.php?id=$1
+RewriteRule ^blog/([0-9]+)\-([a-zA-Z0-9-]*)$ /blog.php?id=$1
+RewriteRule ^blog/$ /blog.php
+
+# Redirección 404
+ErrorDocument 404 /
+
+# Cambio de URLS Trazabilidad, Producción y Hostelería
+Redirect 301 /trazabilidad.html /gestion.html
+Redirect 301 /produccion.html /gestion.html
+Redirect 301 /hosteleria.html /tpv.html
+
+# Nuevas URLs
+RedirectMatch 301 ^/web/$ /
+Redirect 301 /web/contabilidad /contabilidad.html
+Redirect 301 /web/facturacion /gestion.html
+Redirect 301 /web/tpv /tpv.html
+Redirect 301 /web/contacto /contacto.html
+Redirect 301 /web/descargas /descargas.html
+Redirect 301 /web/detalle /
+Redirect 301 /web/registro /registro.html
+Redirect 301 /web/contratar-soporte /contratar-soporte.html
+Redirect 301 /web/trabaja-en-la-nube /trabaja-en-la-nube.html
+Redirect 301 /web/informacion-legal /informacion-legal.html
+Redirect 301 /web/politica-de-privacidad /politica-de-privacidad.html
+Redirect 301 /web/politica-cookies /politica-cookies.html
+Redirect 301 /web/ayuda-iva /
+Redirect 301 /web/cambio-de-iva /
+Redirect 301 /web/ayuda-ejercicio /
+Redirect 301 /web/ejercicio-2014 /
+Redirect 301 /web/servicio-ayuda-inicial /
+Redirect 301 /web/foro /
+
+Redirect 301 /distribucion.html /
+Redirect 301 /prestashop.html /
+
+# Redirecciones del blog a la documentacion
+
+# General
+Redirect 301 /blog/9-exportacion-de-un-formato-de-documento /documentacion/general/exportacion-de-un-formato-de-documento.html
+Redirect 301 /blog/10-importacion-de-un-formato-de-documento /documentacion/general/importacion-de-un-formato-de-documento.html
+Redirect 301 /blog/12-configurando-el-envio-de-correo-electronico-desde-visionwin /documentacion/general/configurando-el-envio-de-correo-electronico-desde-visionwin.html
+Redirect 301 /blog/13-utilizando-el-nuevo-calendario-de-visionwin /documentacion/general/utilizando-el-nuevo-calendario-de-visionwin.html
+Redirect 301 /blog/17-visionwin-ya-permite-actualizar-las-versiones-beta-automaticamente /documentacion/general/visionwin-ya-permite-actualizar-las-versiones-beta-automaticamente.html
+Redirect 301 /blog/21-envio-de-copias-para-mejor-atencion /documentacion/general/envio-de-copias-para-mejor-atencion.html
+Redirect 301 /blog/24-que-es-la-semana-gratuita-y-para-que-me-sirve /documentacion/general/que-es-la-semana-gratuita-y-para-que-me-sirve.html
+Redirect 301 /blog/32-realmente-visionwin-gestion-visionwin-tpv-y-visionwin-contabilidad-son-gratuitos /documentacion/general/realmente-visionwin-gestion-visionwin-tpv-y-visionwin-contabilidad-son-gratuitos.html
+Redirect 301 /blog/35-importar-informes-en-visionwin /documentacion/general/importar-informes-en-visionwin.html
+Redirect 301 /blog/39-llevando-visionwin-en-el-bolsillo /documentacion/general/llevando-visionwin-en-el-bolsillo.html
+Redirect 301 /blog/39-Llevando-Visionwin-en-el-bolsillo /documentacion/general/llevando-visionwin-en-el-bolsillo.html
+Redirect 301 /blog/40-visionwin-en-la-nube /documentacion/general/visionwin-en-la-nube.html
+Redirect 301 /blog/42-utilizar-visionwin-en-red-con-escritorio-remoto-mediante-tsplus /documentacion/general/utilizar-visionwin-en-red-con-escritorio-remoto-mediante-tsplus.html
+
+# TPV
+Redirect 301 /blog/27-stock-desde-tpv /documentacion/tpv/stock-desde-tpv.html
+Redirect 301 /blog/38-fidelizacion-con-puntos-x-cliente /documentacion/tpv/fidelizacion-con-puntos-x-cliente.html
+
+# Facturación
+Redirect 301 /blog/3-registro-horario /documentacion/facturacion/registro-horario.html
+Redirect 301 /blog/5-informe-complejo-con-atributos-y-agrupado /documentacion/facturacion/informe-complejo-con-atributos-y-agrupado.html
+Redirect 301 /blog/6-generacion-de-facturas-electronicas-desde-visionwin-gestion /documentacion/facturacion/generacion-de-facturas-electronicas-desde-visionwin-gestion.html
+Redirect 301 /blog/6- /documentacion/facturacion/generacion-de-facturas-electronicas-desde-visionwin-gestion.html
+Redirect 301 /blog/8-ajustes-de-decimales-en-cantidad-y-precio /documentacion/facturacion/ajustes-de-decimales-en-cantidad-y-precio.html
+Redirect 301 /blog/14-configurando-el-enlace-entre-visionwin-gestion-y-visionwin-contabilidad /documentacion/facturacion/configurando-el-enlace-entre-visionwin-gestion-y-visionwin-contabilidad.html
+Redirect 301 /blog/15-preparando-el-software-visionwin-para-el-nuevo-ejercicio /documentacion/facturacion/preparando-el-software-visionwin-para-el-nuevo-ejercicio.html
+Redirect 301 /blog/16-firma-digital-en-los-documentos /documentacion/facturacion/firma-digital-en-los-documentos.html
+Redirect 301 /blog/26-stock-en-documentos-especiales /documentacion/facturacion/stock-en-documentos-especiales.html
+Redirect 301 /blog/28-como-afectan-los-documentos-de-venta-al-stock /documentacion/facturacion/movimientos-de-stock-en-documentos-de-venta.html
+Redirect 301 /blog/29-movimientos-de-stock-en-documentos-de-compra /documentacion/facturacion/movimientos-de-stock-en-documentos-de-compra.html
+Redirect 301 /blog/30-entradas-salidas-de-almac /documentacion/facturacion/entradas-y-salidas-de-almacen.html
+Redirect 301 /blog/30-entradas-y-salidas-de-almacen /documentacion/facturacion/entradas-y-salidas-de-almacen.html
+Redirect 301 /blog/30-entradas-y-salidas-de-almac /documentacion/facturacion/entradas-y-salidas-de-almacen.html
+Redirect 301 /blog/31-inventarios-y-stocks /documentacion/facturacion/inventarios-y-stocks.html
+Redirect 301 /blog/34-sinli-en-visionwin /documentacion/facturacion/sinli-en-visionwin.html
+Redirect 301 /blog/36-entregas-a-cuenta /documentacion/facturacion/entregas-a-cuenta.html
+
+# Contabilidad
+Redirect 301 /blog/4-importando-datos-desde-contaplus /documentacion/contabilidad/importando-datos-desde-contaplus.html
+Redirect 301 /blog/7-visionwin-contabilidad-modelos-de-impuestos /documentacion/contabilidad/modelos-de-impuestos.html
+Redirect 301 /blog/18-consideraciones-acerca-del-calculo-de-los-modelos-de-iva-e-irpf /documentacion/contabilidad/calculo-modelos.html
+Redirect 301 /blog/19-modelos-de-retenciones-en-visionwin-contabilidad /documentacion/contabilidad/modelos-de-impuestos.html
+Redirect 301 /blog/20-configurando-el-enlace-sii-en-visionwin-contabilidad /documentacion/contabilidad/configurando-enlace-sii.html
+Redirect 301 /blog/23-visionwin-contabilidad-programar-asientos /documentacion/contabilidad/programar-asientos.html
+Redirect 301 /blog/25-facturas-de-rectificacion- /documentacion/contabilidad/facturas-de-rectificacion-.html
+Redirect 301 /blog/41-uso-de-departamentos-y-proyectos-en-visionwin /documentacion/contabilidad/uso-de-departamentos-y-proyectos.html
+
+# Resto
+Redirect 301 /blog/11-nuevas-funciones-en-la-impresion-del-tpv /
+Redirect 301 /blog/22-verificador-de-precios-un-buen-aliado-para-las-salas-de-venta /
+Redirect 301 /blog/33-mejoramos-las-busquedas-y-la-informacion-grafica-de-los-articulos-clientes-y-proveedores /
+Redirect 301 /blog/37-nueva-version-2020 /
+Redirect 301 /blog/52-visionwin-trabaja-para-adaptarse-a-los-requisitos-de-la-nueva-ley-antifraude /blog/52-ley-antifraude-112021
+
+# Errores de rastreo
+Redirect 301 /contabilidad.html/hosteleria.html /hosteleria.html
+RedirectMatch 301 ^/descargas.html/(.*) /descargas.html
+RedirectMatch 301 ^/gestion.html/(.*) /gestion.html
+Redirect 301 /faq.php /faq.html
+RedirectMatch 301 /manuales/(.*) /
+Redirect 301 /web/novedades /
+Redirect 301 /web/programas/tpv /tpv.html
+Redirect 301 /web/programas/facturacion /gestion.html
+Redirect 301 /web/programas/contabilidad /contabilidad.html
+Redirect 301 /web/programas /descargas.html
+Redirect 301 /web/descarga /descargas.html
+Redirect 301 /web/distribucion /
+Redirect 301 /web/index.php/tpv /tpv.html
+Redirect 301 /web/index.php/facturacion /gestion.html
+Redirect 301 /web/index.php/contabilidad /contabilidad.html
+Redirect 301 /web/contratar-soporte/ /contratar-soporte.html
+Redirect 301 /web/ejercicio-2013 /
+Redirect 301 /web/ayuda-ejercicio-2013 /
+Redirect 301 /web/index.php/component/content/frontpage /
+Redirect 301 /web/index.php/contacto /contacto.html
+
+# Compresión
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/x-component
+AddOutputFilterByType DEFLATE text/x-js
+AddOutputFilterByType DEFLATE text/richtext
+AddOutputFilterByType DEFLATE text/xsd
+AddOutputFilterByType DEFLATE text/xsl
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/atom_xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/x-shockwave-flash
+AddOutputFilterByType DEFLATE application/json
+AddOutputFilterByType DEFLATE image/x-icon 
+AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Caché
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|xml|txt|css|svg)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+    <FilesMatch "\.(html|htm|php|js)$">
+        FileETag MTime Size
+        Header set Cache-Control "no-cache"
+        Header unset Last-Modified
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    <filesmatch "\.(jpg|JPG|jpeg|JPEG|gif|GIF|png|PNG|css|js|ico|svg)$">
+        ExpiresActive on 
+        ExpiresDefault "access plus 1 year" 
+    </filesmatch>
+</IfModule>
+

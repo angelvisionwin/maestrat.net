@@ -1,0 +1,91 @@
+.box-precios {
+    border-radius: 5px;
+    transition: box-shadow 0.5s;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.box-precios:hover {
+    box-shadow: 5px 0px 40px rgba(0, 0, 0, .3);
+}
+
+.box-precios-titulo{
+    height:160px;
+}
+
+.box-precios-precio{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.box-precios-ahorra{
+    position: relative;
+    top: -15px;
+}
+
+.box-precios-usuarios{
+    align-items: center;
+}
+
+.box-precios-numero-usuarios{
+    color: #1a9fda;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.box-precios-mas-vendido {
+    border-radius: 5px;
+    transition: box-shadow 0.5s;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px; 
+    background-color: white;
+    box-shadow: 5px 0px 40px rgba(0, 0, 0, .3);
+}
+
+.box-precios-mas-vendido:hover {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, .3);
+}
+
+.mas-vendido{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #1a9fda;
+    color: white;
+    width: 100%;
+}
+
+.barraproducto{
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.iconoproducto{
+    background: #fff;
+}
+
+.descripcionproducto{
+    color: #000;
+}
+
+.tituloproducto{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.opcionproducto{
+    font-size: 24px;
+    color: #0082ca;
+    text-align: right;
+}

@@ -1,0 +1,6 @@
+# Varios
+*.ini
+*.bak
+_*.*
+.vscode/
+

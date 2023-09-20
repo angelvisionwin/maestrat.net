@@ -1,0 +1,69 @@
+/* Visionwin Gestión - Librerías */
+
+.prestashop-fondo {
+    background-size: cover;
+    background-position: center center;
+
+    /* box-shadow: 5px 0px 40px rgba(0, 0, 0, .3); */
+    margin-bottom: 0.5em;
+}
+
+.prestashop-texto {
+    margin-top: 1rem;
+    margin-left: 1rem;z
+    opacity: 0.9;
+    color: white;
+
+    border: 0px solid white;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+   /* box-shadow: 5px 0px 40px rgba(0, 0, 0, .3);*/
+}
+
+.prestashop-fondo-slogan {
+    background-image: url('../img/visionwin-gestion-prestashop.webp');
+    min-height: 681px;
+}
+
+.prestashop-texto-slogan {
+    background-color: #97cbd6;
+}
+
+.prestashop-opciones {
+    background-color: #7ebecc;
+    color: white;
+}
+
+.prestashop-fondo-facturacion {
+    background-image: url('../img/software-facturacion-prestashop.webp');
+    min-height: 667px;
+}
+
+.prestashop-texto-facturacion {
+    background-color: #97cbd6;
+}
+
+.iconos-prestashop {
+    font-size: 4rem;
+    vertical-align: middle;
+    margin-left: 1.5rem;
+}
+
+
+/* Ajustes de resolución */
+
+@media screen and (max-width: 768px) {
+
+    .prestashop-fondo {
+        min-height: 450px;
+    }
+
+    .prestashop-texto {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+}

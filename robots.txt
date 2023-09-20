@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /desarrollo/
+Disallow: /descargas/
+Disallow: /documentacion/
+Disallow: /foro/
+
+Sitemap: https://www.visionwin.com/sitemap-index.xml

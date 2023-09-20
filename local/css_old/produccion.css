@@ -1,0 +1,11 @@
+/* Visionwin Gestión - Producción */
+
+.produccion-banner {
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 0;
+    background-image: url('../img/software-gratuito-procesos-produccion.webp');
+    height: auto;
+}
+
+

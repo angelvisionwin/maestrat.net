@@ -1,0 +1,64 @@
+/* Programas */
+
+.contenedor {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 85%;
+}
+
+.item {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 60px;
+    box-shadow: 0px 0 38px -8px rgb( 0 0 0 / 25%);
+}
+
+.detalles {
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 2em;
+    font-weight: 100;
+    margin-bottom: 30px;
+    line-height: normal;
+}
+
+
+.texto {
+
+    font-size: 0.95em;
+}
+
+@media (max-width: 800px) {
+
+
+    .contenedor {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 1px;
+        padding-right: 1px;
+        width: 100%;
+    }
+    
+    .item {
+        background: #fff;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0 38px -8px rgb( 0 0 0 / 25%);
+    }
+    
+    .detalles {
+        padding: 10px;
+    }
+    
+    .titulo {
+        font-size: 1.75em;
+        font-weight: 100;
+        margin-bottom: 15px;
+        line-height: normal;
+    }
+    
+}

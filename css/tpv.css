@@ -1,0 +1,10 @@
+/* Visionwin TPV */
+
+.tpv-banner {
+    background-size: cover;
+    background-position: top center;
+    margin-bottom: 0;
+    background-image: url('../img/software-tpv-gratis.webp');
+    height: auto;
+}
+

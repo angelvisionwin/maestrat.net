@@ -1,0 +1,10 @@
+/* Visionwin Gestión - Librerías */
+
+.librerias-banner {
+    background-size: cover;
+    background-position: bottom center;
+    margin-bottom: 0;
+    background-image: url('../img/software-librerias-gratis.webp');
+    height: auto;
+}
+

@@ -1,0 +1,11 @@
+/* Visionwin TPV - Hosteleria */
+
+
+.hosteleria-banner {
+    background-size: cover;
+    background-position: bottom center;
+    margin-bottom: 0;
+    background-image: url('../img/software-hosteleria-tpv-gratis.webp');
+    height: auto;
+}
+

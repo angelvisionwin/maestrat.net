@@ -1,0 +1,3 @@
+Uso la librería de código libre fpdf
+Este script es un ejemplo de relleno de un formulario : 
+- http://www.fpdf.org/en/script/script93.php

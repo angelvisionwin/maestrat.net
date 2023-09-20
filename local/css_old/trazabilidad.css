@@ -1,0 +1,10 @@
+/* Visionwin Gestión - Trazabilidad */
+
+.trazabilidad-banner {
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 0;
+    background-image: url('../img/software-trazabilidad-gratuito.webp');
+    height: auto;
+}
+
