@@ -7,8 +7,6 @@
     if(!isset($pagetitle)) $pagetitle = "Visionwin Software de gestión y contabilidad gratuito";
     if(!isset($pagedescription)) $pagedescription = "Software de gestión y contabilidad gratuito para autónomos y pymes. Descarga gratis el programa de contabilidad y facturación.";
     if(!isset($pagekeywords)) $pagekeywords = "software, gestión, contabilidad, gratuito, facturación, autónomos, pymes, programa, descargar, gratis, descargar, programa, conta";
-    if(!isset($extracss)) $extracss = "";
-
     
 ?>
 
@@ -71,10 +69,13 @@
 
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/<?=$extracss?>.css">
-
-
-    <link rel="stylesheet" href="css/banners.css">
+    
+<?php if( isset($extracss1) ) { ?>
+    <link rel="stylesheet" href="css/<?=$extracss1?>.css">
+<?php } ?>
+<?php if( isset($extracss2) ) { ?>
+    <link rel="stylesheet" href="css/<?=$extracss2?>.css">
+<?php } ?>
 
     <!-- Política de cookies -->
     <link rel="stylesheet" href="https://pdcc.gdpr.es/pdcc.min.css">
@@ -152,31 +153,31 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/descargas">Soluciones</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/contabilidad">Contabilidad</a></li>
+                        <li><a class="dropdown-item" href="/contabilidad.php">Contabilidad</a></li> 
 
                         <li>
                             <hr>
                         </li>
-                        <li><a class="dropdown-item" href="/gestion">Facturación</a></li>
-                        <li><a class="dropdown-item" href="/taller">Taller</a></li>
+                        <li><a class="dropdown-item" href="/gestion.php">Facturación</a></li>
+                        <li><a class="dropdown-item" href="/taller.php">Taller</a></li>
                         
-                        <li><a class="dropdown-item" href="/librerias">Librerías</a></li>
-                        <li><a class="dropdown-item" href="/despachos">Despachos</a></li>
+                        <li><a class="dropdown-item" href="/librerias.php">Librerías</a></li>
+                        <li><a class="dropdown-item" href="/despachos.php">Despachos</a></li>
 
                         
                         <li>
                             <hr>
                         </li>
-                        <li><a class="dropdown-item" href="/tpv">TPV</a></li>
+                        <li><a class="dropdown-item" href="/tpv.php">TPV</a></li>
                         
                         <li>
                             <hr>
                         </li>
-                        <li><a class="dropdown-item" href="/trabaja-en-la-nube">Trabajar en la nube</a></li>
+                        <li><a class="dropdown-item" href="/trabaja-en-la-nube.php">Trabajar en la nube</a></li>
                         <li>
                             <hr>
                         </li>
-                        <li><a class="dropdown-item" href="/copias-de-seguridad">Copias de seguridad</a></li>
+                        <li><a class="dropdown-item" href="/copias-de-seguridad.php">Copias de seguridad</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
