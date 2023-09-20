@@ -1,5 +1,7 @@
 <?php 
 
+    require_once( 'no-cache.php' );
+
     $pagetitle = "Programa de gestión de librerías y papelerías - Visionwin";
     $pagedescription = "Software gratis para cubrir las necesidades de gestión de librerías, papelerías y quioscos con datos ampliados en los artículos. El programa incluye comunicación con SINLI y CEGAL.";
     $pagekeywords = "programa gestion librerias, software gestion librerias";

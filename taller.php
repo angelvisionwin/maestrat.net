@@ -1,5 +1,7 @@
 <?php 
 
+    require_once( 'no-cache.php' );
+
     $pagetitle = "Programa de gestión de taller mecánico - Visionwin";
     $pagedescription = "Software gratis para la gestión de talleres mecánicos y de reparación de vehículos. El programa permite controlar la facturación, partes y trabajos realizados.";
     $pagekeywords = "programa gestion taller mecanico, programa para taller mecanico, programa para taller, programa gestion taller, software taller mecanico, software taller";

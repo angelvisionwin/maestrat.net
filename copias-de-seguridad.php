@@ -1,5 +1,7 @@
 <?php 
 
+    require_once( 'no-cache.php' );
+
     $pagetitle = "Copias de seguridad - Visionwin";
     $pagedescription = "Te ofrecemos sevidores seguros para realizar las copias de seguridad de tus programas Visionwin";
     $pagekeywords = "copias visionwin, servicio de copias, copias seguras";

@@ -1,5 +1,7 @@
 <?php 
 
+    require_once( 'no-cache.php' );
+
     $pagetitle = "Trabaja en la nube - Visionwin";
     $pagedescription = "Tenemos el servicio ideal para trabajar con el Software Visionwin desde cualquier lugar sin necesidad de instalar un servidor en tu oficina.";
     $pagekeywords = "software en la nube, servidor virtual";

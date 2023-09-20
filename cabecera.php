@@ -1,8 +1,5 @@
 <?php 
 
-    header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
-    header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
-
     if(!isset($pagecanonical)) $pagecanonical = "https://www.visionwin.com".$_SERVER['REQUEST_URI']; 
     if(!isset($pagetitle)) $pagetitle = "Visionwin Software de gestión y contabilidad gratuito";
     if(!isset($pagedescription)) $pagedescription = "Software de gestión y contabilidad gratuito para autónomos y pymes. Descarga gratis el programa de contabilidad y facturación.";

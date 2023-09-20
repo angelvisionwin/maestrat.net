@@ -1,5 +1,7 @@
 <?php 
 
+    require_once( 'no-cache.php' );
+
     $pagetitle = "Programas de contabilidad gratis - Visionwin";
     $pagedescription = "Programa de contabilidad gratis para empresas y pymes, en español y totalmente configurado. Descarga nuestro software contable con todas las funciones para el día a día.";
     $pagekeywords = "programa de contabilidad, programa de contabilidad gratis, programa contable gratis, software contable gratis, software de contabilidad gratis";

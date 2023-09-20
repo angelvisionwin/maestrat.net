@@ -1,5 +1,7 @@
 <?php 
 
+    require_once( 'no-cache.php' );
+
     $pagetitle = "Software TPV gratis - Visionwin";
     $pagedescription = "Software TPV gratis para gestión de cualquier negocio, tienda, comercio, hostelería... Descarga nuestro programa TPV gratis completo, sencillo de usar y adaptado a terminales táctiles.";
     $pagekeywords = "software tpv, software tpv gratis, programa tpv, programa tpv gratis, programa para hacer tickets, programa para hacer tickets gratis, programa de caja registradora gratis, programa estética gratis, programa peluquería gratis, progrma centro de belleza gratis";
