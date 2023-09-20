@@ -18,7 +18,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <base href="https://www.visionwin.com/" />
 
     <title itemprop="name"><?=$pagetitle?></title>
     <meta name="description" itemprop="description" content="<?=$pagedescription?>" />
