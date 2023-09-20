@@ -68,13 +68,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     
 <?php if( isset($extracss1) ) { ?>
-    <link rel="stylesheet" href="css/<?=$extracss1?>.css">
+    <link rel="stylesheet" href="css/<?=$extracss1?>.min.css">
 <?php } ?>
 <?php if( isset($extracss2) ) { ?>
-    <link rel="stylesheet" href="css/<?=$extracss2?>.css">
+    <link rel="stylesheet" href="css/<?=$extracss2?>.min.css">
 <?php } ?>
 
     <!-- Política de cookies -->

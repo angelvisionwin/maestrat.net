@@ -128,7 +128,7 @@
 
 
     <!-- Funciones comunes ============================================================== -->
-    <script src="js/comunes.js"></script>
+    <script src="js/comunes.min.js"></script>
 
     <script>
         ajustesCOMUNES();
@@ -137,7 +137,7 @@
 
     <!-- FreshChat -->
     
-    <script src="js/freshchat.js"></script>
+    <script src="js/freshchat.min.js"></script>
     <script>
         freshChat();
     </script>    <script type="application/ld+json">
