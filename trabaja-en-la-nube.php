@@ -5,6 +5,8 @@
     $pagetitle = "Trabaja en la nube - Visionwin";
     $pagedescription = "Tenemos el servicio ideal para trabajar con el Software Visionwin desde cualquier lugar sin necesidad de instalar un servidor en tu oficina.";
     $pagekeywords = "software en la nube, servidor virtual";
+    $formulario = "formularionube";
+    $recaptcha = true;
 
     require_once( 'cabecera.php' ); 
 

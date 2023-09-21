@@ -4,7 +4,7 @@
     if(!isset($pagetitle)) $pagetitle = "Visionwin Software de gestión y contabilidad gratuito";
     if(!isset($pagedescription)) $pagedescription = "Software de gestión y contabilidad gratuito para autónomos y pymes. Descarga gratis el programa de contabilidad y facturación.";
     if(!isset($pagekeywords)) $pagekeywords = "software, gestión, contabilidad, gratuito, facturación, autónomos, pymes, programa, descargar, gratis, descargar, programa, conta";
-    
+
 ?>
 
 <!DOCTYPE html>
@@ -101,18 +101,42 @@
                 }
             }
         });
+        PDCookieConsent.blockList([
+            {
+                "domain": "google.com/recaptcha",
+                "name": "Google reCaptcha",
+                "actived": true,
+                "editable": false,
+                "visible": false
+            }
+        ]);
     </script>
 
+    
+    <?php if( isset($recaptcha) ) { ?>
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PT6N974');</script>
+        <script type="text/javascript">
+            var onloadCallback = function () {
+                grecaptcha.render('html_recaptcha', {
+                    'sitekey': '6Ldip90cAAAAAOREVJ5a7z7SuJGOLhs_9iktwXfd'
+                });
+            };
+        </script>
+
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+
+    <?php } ?>
+
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+              w[l] = w[l] || []; w[l].push({
+                  'gtm.start':
+                      new Date().getTime(), event: 'gtm.js'
+              }); var f = d.getElementsByTagName(s)[0],
+                  j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                      'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-PT6N974');</script>
     <!-- End Google Tag Manager -->
 </head>
 
@@ -178,19 +202,19 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/descargas">Descargas</a>
+                    <a class="nav-link" href="/descargas.php">Descargas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacto">Contacto</a>
+                    <a class="nav-link" href="/contacto.php">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/registro">Usuario gratuito</a>
+                    <a class="nav-link" href="/registro.php">Usuario gratuito</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/precios">Precios</a>
+                    <a class="nav-link" href="/precios.php">Precios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contratar-soporte">Contratar soporte</a>
+                    <a class="nav-link" href="/contratar-soporte.php">Contratar soporte</a>
                 </li>
 
                 <li class="nav-item dropdown">

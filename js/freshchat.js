@@ -23,6 +23,8 @@ function paisPermitido() {
     var country = ''
     var allowed_countries = ['ES', 'FR', 'AD']
 
+    console.log( 'country :' + country )
+
     try {
         $.ajax({
             url: 'https://ipgeolocation.abstractapi.com/v1/?api_key=6d267a358de04745a5f3916ae7f20516',
@@ -37,6 +39,7 @@ function paisPermitido() {
                 country = 'ES';
             }
         })
+        
     } catch (error) {
         console.log('Error al obtener el pais');
         country = 'ES';

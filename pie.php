@@ -1,5 +1,5 @@
 <!-- Pie de página -->
-<footer class="estilopie">
+    <footer class="estilopie">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-3">
@@ -15,7 +15,7 @@
                         <i class="far fa-envelope" style="font-size: 0.8rem;"></i> info@visionwin.com
                         <br>
                         <i class="far fa-copyright" style="font-size: 0.8rem;"></i> 1996 -
-                        <script>document.write(Date().substr(11, 4))</script> Visionwin
+                        <?=date("Y");?> Visionwin
                     </p>
 
                 </div>
@@ -129,18 +129,44 @@
 
     <!-- Funciones comunes ============================================================== -->
     <script src="js/comunes.min.js"></script>
-
     <script>
         ajustesCOMUNES();
-
     </script>
 
-    <!-- FreshChat -->
+    <!-- FreshChat ===================================================================== -->
     
     <script src="js/freshchat.min.js"></script>
     <script>
         freshChat();
-    </script>    <script type="application/ld+json">
+    </script>   
+
+    <!--  Controlando el país desde el que se envía el formulario -->
+    <script>
+        if (paisPermitido() === false) {
+            $("#enviarboton").prop("disabled", true);
+            $("#enviarboton").html("No se puede enviar el formulario desde tu país");
+        }
+    </script>
+
+
+    <!-- Funciones js de apoyo a los formularios ======================================== -->
+
+    <?php
+        if ( isset( $formulario ) )
+        {
+    ?>
+
+        <script src="js/formularios.min.js"></script>
+        <script>
+            desactivasubmit( "<?= $formulario ?>");
+        </script>
+
+    <?php
+        }
+    ?>
+
+
+     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
